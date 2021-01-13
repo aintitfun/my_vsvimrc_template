@@ -1,0 +1,39 @@
+"teclas para ver definiciones y demás
+map gi :vsc Edit.GoToImplementation<CR>
+map gr :vsc Edit.FindAllReferences<CR>
+map gp :vsc Edit.PeekDefinition<CR>
+
+"navegacion
+nnoremap <c-o> :vsc View.NavigateBackward <CR>
+nnoremap <c-i> :vsc View.NavigateForward<CR>
+
+"debug
+nnoremap <M-b> :vsc Debug.ToggleBreakpoint<cr>
+nnoremap <M-n> :vsc Debug.DisableAllBreakpoints<cr>
+nnoremap <M-m> :vsc Debug.Breakpoints<cr>
+nnoremap <M-s> :vsc Debug.SetNextStatement<cr>
+nnoremap <M-q> :vsc Debug.StepOver<cr>
+nnoremap <M-w> :vsc Debug.StepInto<cr>
+nnoremap <M-e> :vsc Debug.StepOut<cr>
+nnoremap <M-k> :vsc Debug.QuickWatch<cr>
+nnoremap <M-f> :vsc Debug.Start<cr>
+
+"tests
+nnoremap rat :vsc TestExplorer.RunAllTests<cr>
+
+"varios windows"
+nnoremap q; :vsc View.C#Interactive<cr>
+nnoremap q: :vsc View.CommandWindow<cr>
+nnoremap q[ :vsc TestExplorer.ShowTestExplorer<cr>
+nnoremap q] :vsc View.ErrorList<cr>
+
+"otros"
+nnoremap gof :vsc File.OpenContainingFolder<cr>
+nnoremap K     :vsc Edit.QuickInfo<cr>
+
+"navigate in the higlighted words ocurrences.Useful but the word gets selected on visual,so if you want to navigate must esc or v on each word"
+nnoremap gn  :vsc Edit.NextHighlightedReference<cr><esc>
+nnoremap gN  :vsc Edit.PreviousHighlightedReference<cr><esc>
+
+"subversion"
+nnoremap gh]  :vsc EditorContextMenus.CodeWindow.Subversion.DocumentHistory<cr>
