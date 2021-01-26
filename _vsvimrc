@@ -2,11 +2,13 @@
 map gi :vsc Edit.GoToImplementation<CR>
 map gr :vsc Edit.FindAllReferences<CR>
 map gp :vsc Edit.PeekDefinition<CR>
-map gD :vsc Edit.GoToDefinition<CR>
 
 "navegacion
 nnoremap <c-o> :vsc View.NavigateBackward <CR>
 nnoremap <c-i> :vsc View.NavigateForward<CR>
+
+"build
+nnoremap zb :vsc Build.BuildSelection<CR>
 
 "debug
 nnoremap <M-b> :vsc Debug.ToggleBreakpoint<cr>
@@ -37,4 +39,4 @@ nnoremap gn  :vsc Edit.NextHighlightedReference<cr><esc>
 nnoremap gN  :vsc Edit.PreviousHighlightedReference<cr><esc>
 
 "subversion"
-nnoremap gh]  :vsc EditorContextMenus.CodeWindow.Subversion.DocumentHistory<cr>
+nnoremap g]  :vsc EditorContextMenus.CodeWindow.Subversion.DocumentHistory<cr>
