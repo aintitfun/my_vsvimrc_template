@@ -1,3 +1,7 @@
+"genéricas
+inoremap ff <ESC>
+vnoremap ff <ESC>
+
 "teclas para ver definiciones y demás
 map gi :vsc Edit.GoToImplementation<CR>
 map gr :vsc Edit.FindAllReferences<CR>
@@ -6,6 +10,8 @@ map gp :vsc Edit.PeekDefinition<CR>
 "navegacion
 nnoremap <c-o> :vsc View.NavigateBackward <CR>
 nnoremap <c-i> :vsc View.NavigateForward<CR>
+nnoremap gn  :vsc Edit.NextHighlightedReference<cr><esc><esc>
+nnoremap gN  :vsc Edit.PreviousHighlightedReference<cr><esc><esc>
 
 "build
 nnoremap zb :vsc Build.BuildSelection<CR>
@@ -34,9 +40,6 @@ nnoremap q] :vsc View.ErrorList<cr>
 nnoremap gof :vsc File.OpenContainingFolder<cr>
 nnoremap K     :vsc Edit.QuickInfo<cr>
 
-"navigate in the higlighted words ocurrences.Useful but the word gets selected on visual,so if you want to navigate must esc or v on each word"
-nnoremap gn  :vsc Edit.NextHighlightedReference<cr><esc>
-nnoremap gN  :vsc Edit.PreviousHighlightedReference<cr><esc>
-
 "subversion"
 nnoremap g]  :vsc EditorContextMenus.CodeWindow.Subversion.DocumentHistory<cr>
+
