@@ -1,6 +1,6 @@
 "genéricas
-inoremap ff <ESC>
-vnoremap ff <ESC>
+"inoremap ff <ESC>
+"vnoremap ff <ESC>
 
 "teclas para ver definiciones y demás
 map gi :vsc Edit.GoToImplementation<CR>
