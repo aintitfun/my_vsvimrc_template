@@ -30,11 +30,11 @@ nnoremap <M-f> :vsc Debug.Start<cr>
 
 "tests
 nnoremap rat :vsc TestExplorer.RunAllTests<cr>
+nnoremap q[ :vsc TestExplorer.ShowTestExplorer<cr>
 
 "varios windows"
 nnoremap q; :vsc View.C#Interactive<cr>
 nnoremap q: :vsc View.CommandWindow<cr>
-nnoremap q[ :vsc TestExplorer.ShowTestExplorer<cr>
 nnoremap q] :vsc View.ErrorList<cr>
 
 "otros"
